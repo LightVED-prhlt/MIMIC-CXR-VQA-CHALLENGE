@@ -1,6 +1,6 @@
 import { useState } from "react";
 import chestImg from "../assets/chest.png";
-import lungImg from "../assets/lung2.png";
+import lungImg from "../assets/lung12.png";
 
 const IMAGE_SIZE = 400;
 const LENS_SIZE = 140;
