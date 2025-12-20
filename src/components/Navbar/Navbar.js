@@ -55,7 +55,7 @@ function Navbar() {
   return (
     <>
       {/* Burger button (mobile only) */}
-      {isMobile && (
+      {isMobile && !open && (
         <IconButton
           onClick={() => setOpen(true)}
           sx={{
@@ -68,7 +68,6 @@ function Navbar() {
           <MenuIcon />
         </IconButton>
       )}
-
       {/* Mobile drawer */}
       {isMobile ? (
         <Drawer
