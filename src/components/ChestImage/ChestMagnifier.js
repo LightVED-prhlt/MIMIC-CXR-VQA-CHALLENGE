@@ -1,12 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import chestImg from "../../assets/chest.png";
 import lungImg from "../../assets/lung12.png";
-import './ChestMagnifier.css';
-
-const IMAGE_SIZE = 400;
-const LENS_SIZE = 140;
+import "./ChestMagnifier.css";
 
 export default function ChestMagnifier() {
+  const containerRef = useRef(null);
+
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [show, setShow] = useState(false);
 
@@ -18,13 +17,18 @@ export default function ChestMagnifier() {
     });
   };
 
+  const rect = containerRef.current?.getBoundingClientRect();
+  const imageSize = rect?.width || 0;
+  const lensSize = imageSize * 0.35;
+
   return (
     <div
+      ref={containerRef}
       className="magnifier-container"
       style={{
         position: "relative",
-        width: IMAGE_SIZE,
-        height: IMAGE_SIZE,
+        width: "100%",
+        height: "100%",
       }}
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
@@ -35,8 +39,8 @@ export default function ChestMagnifier() {
         src={chestImg}
         alt="Chest"
         style={{
-          width: IMAGE_SIZE,
-          height: IMAGE_SIZE,
+          width: "100%",
+          height: "100%",
           display: "block",
           userSelect: "none",
         }}
@@ -44,14 +48,14 @@ export default function ChestMagnifier() {
       />
 
       {/* Lens */}
-      {show && (
+      {show && imageSize > 0 && (
         <div
           style={{
             position: "absolute",
-            left: pos.x - LENS_SIZE / 2,
-            top: pos.y - LENS_SIZE / 2,
-            width: LENS_SIZE,
-            height: LENS_SIZE,
+            left: pos.x - lensSize / 2,
+            top: pos.y - lensSize / 2,
+            width: lensSize,
+            height: lensSize,
             borderRadius: "50%",
             border: "4px solid #444",
             overflow: "hidden",
@@ -60,28 +64,26 @@ export default function ChestMagnifier() {
             boxShadow: "0 0 12px rgba(0,0,0,0.5)",
           }}
         >
-          {/* Lung (aligned to chest coordinates) */}
+          {/* Lung */}
           <img
             src={lungImg}
             alt="Lung"
             style={{
               position: "absolute",
-              width: IMAGE_SIZE,
-              height: IMAGE_SIZE,
+              width: imageSize,
+              height: imageSize,
 
-              /* 🔑 Move lung under lens */
-              left: -(pos.x - LENS_SIZE / 2),
-              top: -(pos.y - LENS_SIZE / 2),
+              left: -(pos.x - lensSize / 2),
+              top: -(pos.y - lensSize / 2),
 
-              /* 🔑 Mask stays FIXED to image space */
               WebkitMaskImage: `url(${chestImg})`,
-              WebkitMaskSize: `${IMAGE_SIZE}px ${IMAGE_SIZE}px`,
-              WebkitMaskPosition: `0px 0px`,
+              WebkitMaskSize: `${imageSize}px ${imageSize}px`,
+              WebkitMaskPosition: "0px 0px",
               WebkitMaskRepeat: "no-repeat",
 
               maskImage: `url(${chestImg})`,
-              maskSize: `${IMAGE_SIZE}px ${IMAGE_SIZE}px`,
-              maskPosition: `0px 0px`,
+              maskSize: `${imageSize}px ${imageSize}px`,
+              maskPosition: "0px 0px",
               maskRepeat: "no-repeat",
 
               userSelect: "none",
