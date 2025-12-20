@@ -1,11 +1,24 @@
 import "./App.css";
-import ChestViewer from "./components/ChestViewer/ChestViewer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home";
+import Page2 from "./pages/Page2";
 
 function App() {
   return (
-    <div className="App">
-      <ChestViewer />
-    </div>
+    <Router>
+      <div style={{ display: "flex", minHeight: "100vh" }}>
+        <Navbar />
+
+        <div style={{ flex: 1 }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/page2" element={<Page2 />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
