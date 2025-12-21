@@ -3,6 +3,9 @@ import { Sidebar, Menu, MenuItem, Logo } from "react-mui-sidebar";
 import CottageOutlinedIcon from "@mui/icons-material/CottageOutlined";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
+import logo from "../../assets/logo3.png";
+
+
 
 import {
   Drawer,
@@ -25,7 +28,7 @@ function Navbar() {
       <Logo
         component={Link}
         href="/"
-        img="https://adminmart.com/wp-content/uploads/2024/03/logo-admin-mart-news.png"
+        img={logo}
       >
         My App
       </Logo>
