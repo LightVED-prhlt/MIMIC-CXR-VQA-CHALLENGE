@@ -1,0 +1,46 @@
+.participate-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 24px;
+}
+
+.participate-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.participate-content h2 {
+  margin-bottom: 24px;
+}
+
+.participate-content h3 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.participate-content ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.participate-content li {
+  margin-bottom: 6px;
+}
+
+.participate-content a {
+  color: #6b5cff;
+  text-decoration: none;
+}
+
+.participate-content a:hover {
+  text-decoration: underline;
+}
+
+.section-note {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
