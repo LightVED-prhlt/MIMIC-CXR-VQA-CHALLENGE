@@ -17,8 +17,13 @@
 }
 
 /* Text panel */
+/* Text panel */
 .chest-text-container {
   width: 200px;
   height: 200px;
   overflow-y: auto;
+
+  display: flex;
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
 }
