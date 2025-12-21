@@ -30,7 +30,7 @@ function Navbar() {
         <Logo component={Link} href="/" img={logo}>
           My App
         </Logo>
-
+        <div className="logo-divider" />
         <Menu subHeading="">
           <MenuItem
             icon={<CottageOutlinedIcon />}
