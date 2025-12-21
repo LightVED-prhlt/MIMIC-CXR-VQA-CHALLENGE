@@ -11,7 +11,7 @@ function App() {
       <div style={{ display: "flex", minHeight: "100vh" }}>
         <Navbar />
 
-        <div style={{ flex: 1 }}>
+        <div className="page-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/page2" element={<Page2 />} />
@@ -21,5 +21,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
