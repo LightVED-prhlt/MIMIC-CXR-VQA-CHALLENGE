@@ -1,0 +1,8 @@
+.timeline-content a {
+  color: #6b5cff;
+  text-decoration: none;
+}
+
+.timeline-content a:hover {
+  text-decoration: underline;
+}
