@@ -1,0 +1,108 @@
+.timeline {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 120px 40px 1fr;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid #eaeaea;
+
+  /* important: let the marker stretch full row height */
+  align-items: stretch;
+}
+
+.timeline-date {
+  color: #777;
+  font-size: 14px;
+  text-align: right;
+  padding-top: 4px;
+}
+
+.timeline-marker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  /* important: center icon vertically + make marker span row height */
+  align-items: center;
+  height: 100%;
+}
+
+/* Line ABOVE the icon (only within this item) */
+.timeline-marker::before {
+  content: "";
+  position: absolute;
+
+  /* reach the top edge of the row (including the 24px padding) */
+  top: -24px;
+
+  /* stop at the vertical center of the marker cell */
+  bottom: 50%;
+
+  width: 2px;
+  background: #e0e0e0;
+}
+
+/* Line BELOW the icon (only within this item) */
+.timeline-marker::after {
+  content: "";
+  position: absolute;
+
+  /* start at the vertical center of the marker cell */
+  top: 50%;
+
+  /* reach the bottom edge of the row (including the 24px padding) */
+  bottom: -24px;
+
+  width: 2px;
+  background: #e0e0e0;
+}
+
+/* First (newest): NO line above */
+.timeline-marker.timeline-marker-first::before {
+  display: none;
+}
+
+/* Last (oldest): NO line below */
+.timeline-marker.timeline-marker-last::after {
+  display: none;
+}
+
+.timeline-icon {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  z-index: 1; /* keep icon above the line */
+}
+
+.timeline-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.timeline-content a {
+  color: #6b5cff;
+  text-decoration: none;
+}
+
+.timeline-content a:hover {
+  text-decoration: underline;
+}
