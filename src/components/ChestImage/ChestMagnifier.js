@@ -5,7 +5,7 @@ import "./ChestMagnifier.css";
 
 const AUTO_DURATION = 6000; // ms
 const AUTO_END = { x: 60, y: 110 };
-const AUTO_START = { x: 140, y: 90 }; // initial visible position
+const AUTO_START = { x: 140, y: 90 };
 
 export default function ChestMagnifier() {
   const containerRef = useRef(null);
@@ -31,6 +31,37 @@ export default function ChestMagnifier() {
     setAuto(false);
     cancelAnimationFrame(animRef.current);
   };
+
+  const animateExitToAutoEnd = (fromPos) => {
+  cancelAnimationFrame(animRef.current);
+  startTimeRef.current = null;
+  setAuto(false);
+
+  const EXIT_DURATION = 800; // ms
+
+  const animate = (timestamp) => {
+      if (!startTimeRef.current) startTimeRef.current = timestamp;
+      const elapsed = timestamp - startTimeRef.current;
+      const t = Math.min(elapsed / EXIT_DURATION, 1);
+
+      // Smooth ease-in-out
+      const ease = t < 0.5
+        ? 2 * t * t
+        : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+      setPos({
+        x: fromPos.x + (AUTO_END.x - fromPos.x) * ease,
+        y: fromPos.y + (AUTO_END.y - fromPos.y) * ease,
+      });
+
+      if (t < 1) {
+        animRef.current = requestAnimationFrame(animate);
+      }
+    };
+
+    animRef.current = requestAnimationFrame(animate);
+  };
+
 
   useEffect(() => {
     if (!auto) return;
@@ -86,6 +117,7 @@ export default function ChestMagnifier() {
       }}
       onMouseEnter={stopAuto}
       onMouseMove={handleMove}
+      onMouseLeave={() => animateExitToAutoEnd(pos)}
     >
       {/* Chest */}
       <img
