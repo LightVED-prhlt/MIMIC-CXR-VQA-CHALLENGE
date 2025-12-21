@@ -4,6 +4,8 @@ import CottageOutlinedIcon from "@mui/icons-material/CottageOutlined";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../../assets/logo3.png";
+import "./Navbar.css";
+
 
 
 
@@ -24,35 +26,37 @@ function Navbar() {
   const handleClose = () => setOpen(false);
 
   const SidebarContent = (
-    <Sidebar width="270px" showProfile={false}>
-      <Logo
-        component={Link}
-        href="/"
-        img={logo}
-      >
-        My App
-      </Logo>
-
-      <Menu subHeading="">
-        <MenuItem
-          icon={<CottageOutlinedIcon />}
+    <div className="navbar-container">
+      <Sidebar width="270px" showProfile={false}>
+        <Logo
           component={Link}
-          link="/"
-          isSelected={location.pathname === "/"}
+          href="/"
+          img={logo}
         >
-          Home
-        </MenuItem>
+          My App
+        </Logo>
 
-        <MenuItem
-          icon={<DescriptionOutlinedIcon />}
-          component={Link}
-          link="/page2"
-          isSelected={location.pathname === "/page2"}
-        >
-          Page 2
-        </MenuItem>
-      </Menu>
-    </Sidebar>
+        <Menu subHeading="">
+          <MenuItem
+            icon={<CottageOutlinedIcon />}
+            component={Link}
+            link="/"
+            isSelected={location.pathname === "/"}
+          >
+            Home
+          </MenuItem>
+
+          <MenuItem
+            icon={<DescriptionOutlinedIcon />}
+            component={Link}
+            link="/page2"
+            isSelected={location.pathname === "/page2"}
+          >
+            Page 2
+          </MenuItem>
+        </Menu>
+      </Sidebar>
+    </div>
   );
 
   return (
