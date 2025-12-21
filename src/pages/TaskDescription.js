@@ -26,7 +26,7 @@ function TaskDescription() {
           on how the algorithm is designed internally, for example, whether it is
           learning-based method; frame-, sequence- or scan-based processing; or,
           rigid-, affine- or nonrigid transformation assumptions. Details are
-          explained further in <a href="#">Assessment</a>.
+          explained further in <a href="www.google.com">Assessment</a>.
         </p>
 
         <p>
@@ -43,7 +43,7 @@ function TaskDescription() {
         </p>
 
         <p>
-          We provide a baseline algorithm in this <a href="#">repo</a>.
+          We provide a baseline algorithm in this <a href="www.google.com">repo</a>.
         </p>
       </div>
     </div>
