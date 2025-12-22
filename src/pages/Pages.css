@@ -9,7 +9,7 @@
 
 /* Content: More width, but caps at 900px for readability */
 .page-content {
-  width: 95%;            /* Occupies more screen width on medium screens */
+  width: 85%;            /* Occupies more screen width on medium screens */
   max-width: 100%;
   font-size: 16px;
   line-height: 1.7;
