@@ -56,7 +56,6 @@ function Leaderboard() {
     <div className="page-container">
       <div className="page-content">
         <LeaderboardTable
-          title="Main Challenge Track"
           data={data}
           columns={columns}
         />

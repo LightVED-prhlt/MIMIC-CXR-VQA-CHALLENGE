@@ -1,9 +1,8 @@
 import "./Leaderboard.css";
 
-function Leaderboard({ data, columns, title }) {
+function Leaderboard({ data, columns}) {
   return (
     <div className="leaderboard-container">
-      {title && <h3 className="leaderboard-title">{title}</h3>}
 
       <table className="leaderboard-table">
         <thead>

@@ -4,12 +4,6 @@
   overflow-x: auto;
 }
 
-.leaderboard-title {
-  margin-bottom: 1rem;
-  font-size: 1.15rem;
-  font-weight: 600;
-}
-
 .leaderboard-table {
   width: 100%;
   border-collapse: collapse;
