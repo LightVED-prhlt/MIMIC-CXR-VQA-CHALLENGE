@@ -17,7 +17,7 @@ function LatestNews() {
             target="_blank"
             rel="noreferrer"
           >
-            https://doi.org/10.48550/arXiv.2506.21765
+            https://doi.org/
           </a>{" "}
           and the supplementary material here:{" "}
           <a href="/supplementary.xlsx">supplementary.xlsx</a>.
