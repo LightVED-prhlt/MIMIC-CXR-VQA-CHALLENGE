@@ -2,7 +2,7 @@ import "./Pages.css";
 
 function Assessment() {
   return (
-    <div className="page-container">
+    <div className="page-container" id="top">
       <div className="page-content">
         <h2>Assessment Criteria</h2>
 
@@ -123,6 +123,9 @@ function Assessment() {
           All raw metric values will be publicly released to support transparent
           and reproducible evaluation.
         </div>
+        <p className="back-to-top">
+          <a href="#top">Back to top ↑</a>
+        </p>
       </div>
     </div>
   );

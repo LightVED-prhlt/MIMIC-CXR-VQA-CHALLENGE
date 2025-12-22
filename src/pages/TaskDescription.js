@@ -4,7 +4,7 @@ import DescriptionVQA from "../assets/DescriptionVQA.png";
 
 function TaskDescription() {
   return (
-    <div className="page-container">
+    <div className="page-container" id="top">
       <div className="page-content">
         <h2>Background: CXR Visual Question Answering (VQA)</h2>
 
@@ -117,6 +117,9 @@ function TaskDescription() {
             <li><a href="https://github.com/LightVED-prhlt/BLIP-2-MultiView">BLIP-2 MultiView</a></li>
             <li><a href="https://github.com/LightVED-prhlt/SwinVED-SCST">SwinVED-SCST</a></li>
           </ul>
+        </p>
+        <p className="back-to-top">
+          <a href="#top">Back to top ↑</a>
         </p>
       </div>
     </div>

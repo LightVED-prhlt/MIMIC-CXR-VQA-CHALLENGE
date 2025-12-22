@@ -2,7 +2,7 @@ import "./Pages.css";
 
 function ChallengeRulesPolicies() {
   return (
-    <div className="page-container">
+    <div className="page-container" id="top">
       <div className="page-content">
         <h2>Participation Policy</h2>
 
@@ -174,6 +174,9 @@ function ChallengeRulesPolicies() {
             here
           </a>{" "}
           for Just the Docs.
+        </p>
+        <p className="back-to-top">
+          <a href="#top">Back to top ↑</a>
         </p>
       </div>
     </div>

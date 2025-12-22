@@ -1,3 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  text-align: right;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
 /* Container: Removes top gap and centers everything */
 .page-container {
   min-height: 100%;

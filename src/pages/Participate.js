@@ -2,7 +2,7 @@ import "./Pages.css";
 
 function Participate() {
   return (
-    <div className="page-container">
+    <div className="page-container" id="top">
       <div className="page-content">
         <h2>How to Participate in the CXR-ORACLE 2025 Challenge</h2>
 
@@ -68,6 +68,9 @@ function Participate() {
             <a href="https://forms.gle/REPLACE_WITH_REAL_FORM">Paper 3</a>, <a href="https://forms.gle/REPLACE_WITH_REAL_FORM">Paper 4</a>.
           </li> */}
         </ul>
+        <p className="back-to-top">
+          <a href="#top">Back to top ↑</a>
+        </p>
       </div>
     </div>
   );

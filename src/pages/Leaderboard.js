@@ -53,7 +53,7 @@ function Leaderboard() {
   ];
 
   return (
-    <div className="page-container">
+    <div className="page-container" id="top">
       <div className="page-content">
         <LeaderboardTable
           data={data}
@@ -63,8 +63,10 @@ function Leaderboard() {
           <strong>NOTE:</strong> All scores (the larger the better) are 
           normalised using the ranking method described in the <a href="/Assessment">assessment</a> page.
         </div>
+        <p className="back-to-top">
+            <a href="#top">Back to top ↑</a>
+        </p>
       </div>
-      
     </div>
   );
 }

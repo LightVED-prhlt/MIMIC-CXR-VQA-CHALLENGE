@@ -76,8 +76,13 @@ function LatestNews() {
   ];
 
   return (
-    <div className="page-container">
-      <UpdatesTimeLine updates={updates} />
+    <div className="page-container" id="top">
+      <div className="page-content">
+        <UpdatesTimeLine updates={updates} />
+        <p className="back-to-top">
+            <a href="#top">Back to top ↑</a>
+        </p>
+      </div>
     </div>
   );
 }

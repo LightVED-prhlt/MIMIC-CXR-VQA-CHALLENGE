@@ -4,7 +4,7 @@ import FinalDistribution from "../assets/FinalLabelDistribution.png";
 
 function DataSet() {
   return (
-    <div className="page-container">
+    <div className="page-container" id="top">
       <div className="page-content">
         <h2>The Dataset</h2>
 
@@ -118,6 +118,9 @@ function DataSet() {
           be obtained directly from the <a href="https://physionet.org/content/mimic-cxr/2.1.0/">official MIMIC-CXR database</a> and linked
           using the provided study and image identifiers. Users must comply with
           the original MIMIC-CXR data usage agreement to access the images.
+        </p>
+        <p className="back-to-top">
+          <a href="#top">Back to top ↑</a>
         </p>
       </div>
     </div>

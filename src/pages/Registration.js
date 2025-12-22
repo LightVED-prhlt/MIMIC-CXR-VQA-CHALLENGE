@@ -2,7 +2,7 @@ import "./Pages.css";
 
 function Registration() {
   return (
-    <div className="page-container">
+    <div className="page-container" id="top">
       <div className="page-content">
         <h2>Registration</h2>
 
@@ -32,6 +32,9 @@ function Registration() {
           may not be able to be added to this mailing list because of some restrictions
           within your organisation. Please contact <a href="mailto:maasala@prhlt.upv.es">maasala@prhlt.upv.es </a>
           if you encounter any problem during registration.
+        </p>
+        <p className="back-to-top">
+          <a href="#top">Back to top ↑</a>
         </p>
       </div>
     </div>

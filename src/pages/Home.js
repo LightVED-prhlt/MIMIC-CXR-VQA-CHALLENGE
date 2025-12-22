@@ -25,7 +25,7 @@ function Home() {
   ];
 
   return (
-    <div className="page-container">
+    <div className="page-container" id="top">
       <ChestViewer />
       <div className="page-content">
         <p>
@@ -124,6 +124,9 @@ function Home() {
           Roberto Paredes Palacios, polytechnic university of valencia
         </p>
         <h3>Sponsors</h3>
+        <p className="back-to-top">
+          <a href="#top">Back to top ↑</a>
+        </p>
       </div>
     </div>
   );
