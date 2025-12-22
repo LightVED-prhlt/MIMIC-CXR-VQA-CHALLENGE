@@ -79,15 +79,20 @@
   font-size: 15px;
 }
 
-.figure {
-  margin: 24px 0 32px;
+.figure-container {
   text-align: center;
+  margin: 2rem 0;
+}
+
+.figure {
+  max-width: 100%;
+  height: auto;
 }
 
 .figure-caption {
   font-size: 14px;
   color: #555;
-  margin-top: -8px;
+  margin-top: 0.5rem;
   margin-bottom: 32px;
 }
 
@@ -113,4 +118,13 @@
   color: #999;
   text-decoration: none;
   cursor: not-allowed;
+}
+
+
+.equation {
+  font-family: "Times New Roman", "STIX Two Math", serif;
+  font-size: 1.05rem;
+  text-align: center;
+  margin: 1.2rem 0;
+  color: #111827;
 }
