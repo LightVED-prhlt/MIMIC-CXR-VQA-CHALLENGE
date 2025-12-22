@@ -4,6 +4,7 @@ import "./Pages.css"
 
 function Home() {
   const timelineColumns = ["Date", "Challenge Milestone"];
+  const ProgrammeColumns = ["Time", "Activity"];
 
   const timelineData = [
     ["Apr. 01, 2025", "Challenge Websites Opening/Registration Opens"],
@@ -15,6 +16,13 @@ function Home() {
     ["Sep. 27, 2025", "TUS-REC2025 Challenge Events at MICCAI 2025"],
     ["Oct. 13, 2025", "Post-challenge submission deadline"],
   ];
+  
+  const ProgrammeData = [
+    ["16:00-16:10", "Introduction to the TUS-REC2025 Challenge"],
+    ["16:10-17:00", "Presentations by competing teams"],
+    ["17:00-17:05", "Results summary"],
+    ["17:05-17:15", "Awards ceremony"],
+  ];
 
   return (
     <div className="page-container">
@@ -23,12 +31,11 @@ function Home() {
         <p>
           <strong>The CXR-ORACLE Challenge</strong> introduces a new large-scale
           benchmark for medical VQA based on chest radiography. The challenge is
-          built upon <strong>MIMIC-CXR-VQA</strong>, a new dataset comprising over
-          3.2 million question–answer pairs derived from 254,934 chest X-ray
-          images, spanning 15 clinically relevant categories. Questions are
-          grounded in radiological findings, while answers are open-ended,
-          evidence-based, and linguistically diverse, to faithfully reflect
-          clinical reasoning rather than templated responses.
+          built upon a new dataset comprising over <strong>3.2 million</strong> question–answer 
+          pairs derived from 254,934 chest X-ray images, spanning 15 clinically 
+          relevant categories. Questions are grounded in radiological findings, 
+          while answers are open-ended, evidence-based, and linguistically diverse, 
+          to faithfully reflect clinical reasoning rather than templated responses.
         </p>
 
         <p>
@@ -77,9 +84,46 @@ function Home() {
         <h3>Timeline</h3>
         <Table columns={timelineColumns} data={timelineData} />
         <h3>Programme</h3>
+        <p>
+          The Challenge will take place on (coming soon), in meeting room (coming soon). The tentative schedule is outlined below.
+        </p>
+        <Table columns={ProgrammeColumns} data={ProgrammeData} />
         <h3>The Task</h3>
+        <p>
+          This challenge focuses on Chest X-ray Visual Question Answering (VQA), where the goal is to
+          automatically generate clinically meaningful answers to natural language questions by
+          jointly reasoning over chest X-ray images and textual inputs. By enabling targeted and
+          fine-grained queries about radiographic findings, anatomical structures, and disease
+          characteristics, this task establishes a benchmark for multimodal reasoning in medical
+          imaging and supports the development of models with potential applications in clinical
+          decision support, education, and large-scale dataset annotation.
+        </p>
+        <p>
+          For detailed information, please refer to <a href="/TaskDescription">task description</a>, 
+          <a href="/Dataset"> dataset</a>, <a href="/Assessment">assessment</a>, and <a href="/Submission">submission process</a>.
+        </p>
         <h3>Awards</h3>
+        <p>
+          The results from all participants will be made publicly available on leaderboard unless the submitted dockers
+          incurred errors during the evaluation process. Teams are allowed to make multiple distinct submissions (but must 
+          ensure they are not merely simple variations in hyperparameter values). The leaderboard will be accessible for 
+          public viewing <a href="/Leaderboard">here</a>.
+          <ul>
+            <li>The first-place and runner-up achievers will receive additional certificates.</li>
+            <li>Participants who successfully participated the challenge will be awarded certificates of participation.</li>
+          </ul>
+        </p>
         <h3>Organizers</h3>
+        <p>
+          Mohamed Aas Alas, polytechnic university of valencia
+        </p>
+        <p>
+          Alberto Albiol Colomer, polytechnic university of valencia
+        </p>
+        <p>
+          Roberto Paredes Palacios, polytechnic university of valencia
+        </p>
+        <h3>Sponsors</h3>
       </div>
     </div>
   );
