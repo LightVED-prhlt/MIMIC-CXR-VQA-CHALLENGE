@@ -1,6 +1,6 @@
 import ChestViewer from "../components/ChestViewer/ChestViewer";
 import Table from "../components/Table/Table";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Pages.css"
 
 function Home() {
@@ -100,15 +100,15 @@ function Home() {
           decision support, education, and large-scale dataset annotation.
         </p>
         <p>
-          For detailed information, please refer to <Link href="/TaskDescription">task description</Link>, 
-          <Link href="/Dataset"> dataset</Link>, <Link href="/Assessment">assessment</Link>, and <Link href="/Submission">submission process</Link>.
+          For detailed information, please refer to <NavLink href="/TaskDescription">task description</NavLink>, 
+          <NavLink href="/Dataset"> dataset</NavLink>, <NavLink href="/Assessment">assessment</NavLink>, and <NavLink href="/Submission">submission process</NavLink>.
         </p>
         <h3>Awards</h3>
         <p>
           The results from all participants will be made publicly available on leaderboard unless the submitted dockers
           incurred errors during the evaluation process. Teams are allowed to make multiple distinct submissions (but must 
           ensure they are not merely simple variations in hyperparameter values). The leaderboard will be accessible for 
-          public viewing <Link href="/Leaderboard">here</Link>.
+          public viewing <NavLink href="/Leaderboard">here</NavLink>.
           <ul>
             <li>The first-place and runner-up achievers will receive additional certificates.</li>
             <li>Participants who successfully participated the challenge will be awarded certificates of participation.</li>
@@ -126,7 +126,7 @@ function Home() {
         </p>
         <h3>Sponsors</h3>
         <p className="back-to-top">
-          <Link href="#top">Back to top ↑</Link>
+          <NavLink href="#top">Back to top ↑</NavLink>
         </p>
       </div>
     </div>
