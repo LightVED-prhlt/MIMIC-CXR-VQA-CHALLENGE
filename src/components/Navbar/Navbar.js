@@ -143,13 +143,9 @@ function Navbar() {
           <IconButton onClick={handleOpen}>
             <MenuIcon />
           </IconButton>
-
-          <div
-            className="topbar-logo-wrapper"
-            onClick={() => (window.location.href = "/")}
-          >
+          <Link to="/" className="topbar-logo-wrapper">
             <img src={logoside} alt="logo" />
-          </div>
+          </Link>
         </div>
       )}
 
