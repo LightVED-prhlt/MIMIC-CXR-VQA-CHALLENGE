@@ -12,11 +12,11 @@
 }
 
 /* Smooth padding growth AFTER 1400px */
-@media (min-width: 1070px) {
+@media (min-width: 1400px) {
   .app-layout {
     padding-left: clamp(
       0rem,                      /* starts at 0 */
-      calc((100vw - 1070px) * 0.5),
+      calc((100vw - 1400px) * 0.5),
       30rem                      /* sensible max */
     );
   }
