@@ -1,5 +1,6 @@
 import "./Pages.css";
 import { Link } from "react-router-dom";
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 function Registration() {
   return (
@@ -34,14 +35,7 @@ function Registration() {
           within your organisation. Please contact <Link to="mailto:maasala@prhlt.upv.es">maasala@prhlt.upv.es </Link>
           if you encounter any problem during registration.
         </p>
-        <p className="back-to-top">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="back-to-top-link"
-          >
-            Back to top ↑
-          </button>
-        </p>
+        <BackToTopButton />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import UpdatesTimeLine from "../components/UpdatesTimeLine/UpdatesTimeLine";
 import "./Pages.css"
 // import { Link } from "react-router-dom"; uncomment when used
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 function LatestNews() {
   const updates = [
@@ -80,14 +81,7 @@ function LatestNews() {
     <div className="page-container">
       <div className="page-content">
         <UpdatesTimeLine updates={updates} />
-        <p className="back-to-top">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="back-to-top-link"
-          >
-            Back to top ↑
-          </button>
-        </p>
+        <BackToTopButton />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import "./Pages.css";
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 function Assessment() {
   return (
@@ -123,14 +124,7 @@ function Assessment() {
           All raw metric values will be publicly released to support transparent
           and reproducible evaluation.
         </div>
-        <p className="back-to-top">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="back-to-top-link"
-          >
-            Back to top ↑
-          </button>
-        </p>
+        <BackToTopButton />
       </div>
     </div>
   );

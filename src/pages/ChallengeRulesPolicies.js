@@ -1,5 +1,6 @@
 import "./Pages.css";
 import { Link } from "react-router-dom";
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 function ChallengeRulesPolicies() {
   return (
@@ -176,14 +177,7 @@ function ChallengeRulesPolicies() {
           </Link>{" "}
           for Just the Docs.
         </p>
-        <p className="back-to-top">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="back-to-top-link"
-          >
-            Back to top ↑
-          </button>
-        </p>
+        <BackToTopButton />
       </div>
     </div>
   );

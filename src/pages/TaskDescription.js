@@ -1,6 +1,7 @@
 import "./Pages.css";
 import DescriptionVQA from "../assets/DescriptionVQA.png";
 import { Link } from "react-router-dom";
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 
 function TaskDescription() {
@@ -126,14 +127,7 @@ function TaskDescription() {
             <li><Link to="https://github.com/LightVED-prhlt/SwinVED-SCST">SwinVED-SCST</Link></li>
           </ul>
         </p>
-        <p className="back-to-top">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="back-to-top-link"
-          >
-            Back to top ↑
-          </button>
-        </p>
+        <BackToTopButton />
       </div>
     </div>
   );

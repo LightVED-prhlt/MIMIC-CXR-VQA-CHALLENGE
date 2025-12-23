@@ -1,5 +1,7 @@
 import "./Pages.css";
 import { Link } from "react-router-dom";
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
+
 
 function Participate() {
   return (
@@ -69,14 +71,7 @@ function Participate() {
             <Link to="https://forms.gle/REPLACE_WITH_REAL_FORM">Paper 3</Link>, <Link to="https://forms.gle/REPLACE_WITH_REAL_FORM">Paper 4</Link>.
           </li> */}
         </ul>
-        <p className="back-to-top">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="back-to-top-link"
-          >
-            Back to top ↑
-          </button>
-        </p>
+        <BackToTopButton />
       </div>
     </div>
   );

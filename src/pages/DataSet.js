@@ -1,6 +1,7 @@
 import "./Pages.css";
 import FinalDistribution from "../assets/FinalLabelDistribution.png";
 import { Link } from "react-router-dom";
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 function DataSet() {
   return (
@@ -126,14 +127,7 @@ function DataSet() {
           using the provided study and image identifiers. Users must comply with
           the original MIMIC-CXR data usage agreement to access the images.
         </p>
-        <p className="back-to-top">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="back-to-top-link"
-          >
-            Back to top ↑
-          </button>
-        </p>
+        <BackToTopButton />
       </div>
     </div>
   );

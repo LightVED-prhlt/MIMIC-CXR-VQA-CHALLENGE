@@ -1,6 +1,7 @@
 import "./Pages.css";
 import LeaderboardTable from "../components/Leaderboard/Leaderboard";
 import { Link } from "react-router-dom";
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 function Leaderboard() {
   const data = [
@@ -64,14 +65,7 @@ function Leaderboard() {
           <strong>NOTE:</strong> All scores (the larger the better) are 
           normalised using the ranking method described in the <Link to="/Assessment">assessment</Link> page.
         </div>
-        <p className="back-to-top">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="back-to-top-link"
-          >
-            Back to top ↑
-          </button>
-        </p>
+        <BackToTopButton />
       </div>
     </div>
   );

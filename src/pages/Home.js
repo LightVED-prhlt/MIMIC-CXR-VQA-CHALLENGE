@@ -2,6 +2,7 @@ import ChestViewer from "../components/ChestViewer/ChestViewer";
 import Table from "../components/Table/Table";
 import { Link } from "react-router-dom";
 import "./Pages.css"
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 function Home() {
   const timelineColumns = ["Date", "Challenge Milestone"];
@@ -125,14 +126,7 @@ function Home() {
           Roberto Paredes Palacios, polytechnic university of valencia
         </p>
         <h3>Sponsors</h3>
-        <p className="back-to-top">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="back-to-top-link"
-          >
-            Back to top ↑
-          </button>
-        </p>
+        <BackToTopButton />
       </div>
     </div>
   );
