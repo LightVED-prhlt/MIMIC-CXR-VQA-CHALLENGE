@@ -119,7 +119,7 @@ function Navbar() {
             link="/ChallengeRulesPolicies"
             isSelected={location.pathname === "/ChallengeRulesPolicies"}
           >
-            Challenge Rules & Policies
+            Rules & Policies
           </MenuItem>
 
           <MenuItem
