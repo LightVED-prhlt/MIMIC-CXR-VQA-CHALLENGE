@@ -3,27 +3,29 @@ import Table from "../components/Table/Table";
 import { Link } from "react-router-dom";
 import "./Pages.css"
 import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
+import sponsorLogo from "../assets/logo-gva-proyecto-prometeo.png";
+
 
 function Home() {
   const timelineColumns = ["Date", "Challenge Milestone"];
   const ProgrammeColumns = ["Time", "Activity"];
 
   const timelineData = [
-    ["Apr. 01, 2025", "Challenge Websites Opening/Registration Opens"],
-    ["Apr. 28, 2025", "Training Data/Baseline Code Release"],
-    ["Jun. 23, 2025", "Validation Data/Submission Code Release"],
-    ["Jul. 07, 2025", "Submission Starts"],
-    ["Aug. 31, 2025", "Submission Closes"],
-    ["Sep. 01, 2025", "Winners Announcement"],
-    ["Sep. 27, 2025", "CXR-ORACLE Challenge Events at MICCAI 2025"],
-    ["Oct. 13, 2025", "Post-challenge submission deadline"],
+    ["Apr. 01, 2026", "Challenge Websites Opening/Registration Opens"],
+    ["Apr. 28, 2026", "Training Data/Baseline Code Release"],
+    ["Jun. 23, 2026", "Validation Data/Submission Code Release"],
+    ["Jul. 01, 2026", "Submission Starts"],
+    ["Aug. 31, 2026", "Submission Closes"],
+    ["Sep. 01, 2026", "Winners Announcement"],
+    ["Sep. 27, 2026", "CXR-ORACLE Challenge Events at MICCAI 2025"],
   ];
   
   const ProgrammeData = [
-    ["16:00-16:10", "Introduction to the CXR-ORACLE Challenge"],
-    ["16:10-17:00", "Presentations by competing teams"],
-    ["17:00-17:05", "Results summary"],
-    ["17:05-17:15", "Awards ceremony"],
+    ["00:00-00:10", "Introduction to the CXR-ORACLE Challenge"],
+    ["00:10-00:55", "Presentations by winner teams"],
+    ["00:55-01:05", "Results summary"],
+    ["01:05-01:15", "Awards ceremony"],
+    ["01:15-02:00", "Poster Session & Networking"],
   ];
 
   return (
@@ -111,21 +113,26 @@ function Home() {
           ensure they are not merely simple variations in hyperparameter values). The leaderboard will be accessible for 
           public viewing <Link to="/Leaderboard">here</Link>.
           <ul>
-            <li>The first-place and runner-up achievers will receive additional certificates.</li>
+            <li>The first-place will receive additional certificates.</li>
             <li>Participants who successfully participated the challenge will be awarded certificates of participation.</li>
           </ul>
         </p>
         <h3>Organizers</h3>
         <p>
-          Mohamed Aas Alas, polytechnic university of valencia
+          Mohamed Aas Alas, polytechnic university of valencia, Spain
         </p>
         <p>
-          Alberto Albiol Colomer, polytechnic university of valencia
+          Alberto Albiol Colomer, polytechnic university of valencia, Spain
         </p>
         <p>
-          Roberto Paredes Palacios, polytechnic university of valencia
+          Roberto Paredes Palacios, polytechnic university of valencia, Spain
         </p>
         <h3>Sponsors</h3>
+        <img
+          src={sponsorLogo}
+          alt="GVA Proyecto Prometeo"
+          className="sponsor-logo"
+        />
         <BackToTopButton />
       </div>
     </div>

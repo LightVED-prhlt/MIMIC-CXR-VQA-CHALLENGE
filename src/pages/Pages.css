@@ -16,6 +16,11 @@ html {
   text-decoration: underline;
 }
 
+.sponsor-logo {
+  max-width: 150px;
+  margin: 20px auto;
+  height: auto;
+}
 
 
 /* Container: Removes top gap and centers everything */
