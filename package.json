@@ -2,7 +2,7 @@
   "name": "mimic-cxr-vqa-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://maa1604.github.io/MIMIC-CXR-VQA-CHALLENGE",
+  "homepage": "https://lightved-prhlt.github.io/MIMIC-CXR-VQA-CHALLENGE",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
