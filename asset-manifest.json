@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MIMIC-CXR-VQA-CHALLENGE/static/css/main.94ebc372.css",
-    "main.js": "/MIMIC-CXR-VQA-CHALLENGE/static/js/main.d166f6b8.js",
+    "main.js": "/MIMIC-CXR-VQA-CHALLENGE/static/js/main.056937cf.js",
     "static/js/453.2d96f0cf.chunk.js": "/MIMIC-CXR-VQA-CHALLENGE/static/js/453.2d96f0cf.chunk.js",
     "static/media/lung12.png": "/MIMIC-CXR-VQA-CHALLENGE/static/media/lung12.3981fa739b9f4b030e69.png",
     "static/media/FinalLabelDistribution.png": "/MIMIC-CXR-VQA-CHALLENGE/static/media/FinalLabelDistribution.aaca876c41af11f870d8.png",
@@ -12,11 +12,11 @@
     "static/media/logo-gva-proyecto-prometeo.png": "/MIMIC-CXR-VQA-CHALLENGE/static/media/logo-gva-proyecto-prometeo.de940c405ac6b0769256.png",
     "index.html": "/MIMIC-CXR-VQA-CHALLENGE/index.html",
     "main.94ebc372.css.map": "/MIMIC-CXR-VQA-CHALLENGE/static/css/main.94ebc372.css.map",
-    "main.d166f6b8.js.map": "/MIMIC-CXR-VQA-CHALLENGE/static/js/main.d166f6b8.js.map",
+    "main.056937cf.js.map": "/MIMIC-CXR-VQA-CHALLENGE/static/js/main.056937cf.js.map",
     "453.2d96f0cf.chunk.js.map": "/MIMIC-CXR-VQA-CHALLENGE/static/js/453.2d96f0cf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94ebc372.css",
-    "static/js/main.d166f6b8.js"
+    "static/js/main.056937cf.js"
   ]
 }
