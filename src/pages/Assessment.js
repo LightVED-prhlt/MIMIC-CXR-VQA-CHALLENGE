@@ -24,7 +24,7 @@ function Assessment() {
           reliable.
         </p>
 
-        <h4>Primary Metric</h4>
+        <h4>Primary Metrics</h4>
 
         <ul>
           <li>
