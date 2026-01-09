@@ -34,31 +34,25 @@ function Assessment() {
             serves as the <strong>primary ranking metric</strong> in the
             challenge.
           </li>
-        </ul>
-
-        <h4>Clinical Correctness Metrics</h4>
-
-        <ul>
           <li>
-            <strong>RadGraph F1</strong>: Evaluates the correctness of clinical
+            <strong>RadGraph (F1)</strong>: Evaluates the correctness of clinical
             entities and relations extracted from the generated answers. This
             metric assesses factual grounding and penalizes hallucinated or
             missing findings.
           </li>
-          <li>
-            <strong>CheXbert</strong>: Maps generated answers to structured
-            pathology labels and compares them to ground-truth labels. This
-            metric provides an interpretable measure of pathology-level accuracy.
-          </li>
         </ul>
+
+        <p>
+          <strong>BERTScore (F1)</strong> and <strong>RadGraph (F1)</strong> are both
+          considered <strong>primary evaluation metrics</strong> and contribute
+          equally to the final ranking.
+        </p>
 
         <h4>Auxiliary Linguistic Metrics</h4>
 
         <ul>
           <li>BLEU-1, BLEU-2, BLEU-3, BLEU-4</li>
-          <li>METEOR</li>
           <li>ROUGE-L</li>
-          <li>CIDEr</li>
         </ul>
 
         <p>
@@ -72,50 +66,24 @@ function Assessment() {
 
         <p>
           The official leaderboard ranking is based primarily on semantic and
-          clinical correctness. Models are ranked according to their average
-          BERTScore (F1) across the test set.
+          clinical correctness.
         </p>
 
         <p>
-          RadGraph F1 is used as a <strong>secondary metric</strong> to assess
-          clinical factuality and may be used as a tie-breaker between models
-          with similar semantic performance.
+          Models are ranked according to a weighted average of
+          <strong> BERTScore (F1)</strong> and <strong>RadGraph (F1)</strong>, with
+          equal contribution from both metrics.
         </p>
 
         <div className="formula-block">
           <p>
-            Final Score = 0.6 × BERTScore (F1) + 0.4 × RadGraph (F1)
+            Final Score = 0.5 × BERTScore (F1) + 0.5 × RadGraph (F1)
           </p>
         </div>
 
         <p>
           Scores are computed per question–answer pair and averaged across the
           full test set. Higher scores indicate better overall performance.
-        </p>
-
-        <h3>Additional Leaderboards</h3>
-
-        <p>
-          In addition to the main leaderboard, auxiliary leaderboards are
-          provided for deeper analysis:
-        </p>
-
-        <ul>
-          <li>
-            <strong>Clinical Accuracy Leaderboard</strong> (RadGraph)
-          </li>
-          <li>
-            <strong>Pathology Detection Leaderboard</strong> (CheXbert)
-          </li>
-          <li>
-            <strong>Linguistic Similarity Leaderboard</strong> (BLEU / ROUGE /
-            METEOR)
-          </li>
-        </ul>
-
-        <p>
-          These leaderboards are intended for diagnostic purposes and do not
-          affect the final ranking.
         </p>
 
         <div className="note">
