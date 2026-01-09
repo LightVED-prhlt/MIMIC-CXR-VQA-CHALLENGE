@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MIMIC-CXR-VQA-CHALLENGE/static/css/main.94ebc372.css",
+    "main.js": "/MIMIC-CXR-VQA-CHALLENGE/static/js/main.381ac6a7.js",
+    "static/js/453.2d96f0cf.chunk.js": "/MIMIC-CXR-VQA-CHALLENGE/static/js/453.2d96f0cf.chunk.js",
+    "static/media/lung12.png": "/MIMIC-CXR-VQA-CHALLENGE/static/media/lung12.3981fa739b9f4b030e69.png",
+    "static/media/FinalLabelDistribution.png": "/MIMIC-CXR-VQA-CHALLENGE/static/media/FinalLabelDistribution.aaca876c41af11f870d8.png",
+    "static/media/DescriptionVQA.png": "/MIMIC-CXR-VQA-CHALLENGE/static/media/DescriptionVQA.ef2e972856fe9d35ecd3.png",
+    "static/media/chest.png": "/MIMIC-CXR-VQA-CHALLENGE/static/media/chest.81a06f0307563c76fc80.png",
+    "static/media/logo2.png": "/MIMIC-CXR-VQA-CHALLENGE/static/media/logo2.8c8bd9f67f05a0b6f7af.png",
+    "static/media/logo3.png": "/MIMIC-CXR-VQA-CHALLENGE/static/media/logo3.7ad7e9c1b90158eb6769.png",
+    "static/media/logo-gva-proyecto-prometeo.png": "/MIMIC-CXR-VQA-CHALLENGE/static/media/logo-gva-proyecto-prometeo.de940c405ac6b0769256.png",
+    "index.html": "/MIMIC-CXR-VQA-CHALLENGE/index.html",
+    "main.94ebc372.css.map": "/MIMIC-CXR-VQA-CHALLENGE/static/css/main.94ebc372.css.map",
+    "main.381ac6a7.js.map": "/MIMIC-CXR-VQA-CHALLENGE/static/js/main.381ac6a7.js.map",
+    "453.2d96f0cf.chunk.js.map": "/MIMIC-CXR-VQA-CHALLENGE/static/js/453.2d96f0cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94ebc372.css",
+    "static/js/main.381ac6a7.js"
+  ]
+}
