@@ -12,7 +12,7 @@ function Home() {
 
   const timelineData = [
     ["Apr. 01, 2026", "Challenge Websites Opening/Registration Opens"],
-    ["Apr. 28, 2026", "Training/Validation Data/Evaluation Code Release"],
+    ["Apr. 28, 2026", "Training and Validation Data/Evaluation Code Release"],
     ["Jul. 01, 2026", "Submission Starts"],
     ["Aug. 31, 2026", "Submission Closes"],
     ["Sep. 01, 2026", "Winners Announcement"],
