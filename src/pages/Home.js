@@ -17,7 +17,7 @@ function Home() {
     ["Jul. 01, 2026", "Submission Starts"],
     ["Aug. 31, 2026", "Submission Closes"],
     ["Sep. 01, 2026", "Winners Announcement"],
-    ["Sep. 27, 2026", "CXR-ORACLE Challenge Events at MICCAI 2025"],
+    ["Oct. 04-08, 2026", "CXR-ORACLE Challenge Events at MICCAI 2025"],
   ];
   
   const ProgrammeData = [
